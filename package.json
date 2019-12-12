@@ -1,0 +1,39 @@
+{
+  "name": "demo-project",
+  "version": "1.0.0",
+  "description": "This is demo project for Protracto",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "webdriver-update": "./node_modules/.bin/webdriver-manager update --vesrion.chrome 78.0.3904.70",
+    "test": "protractor ./dist/out-tsc/protractor.conf.js",
+    "pretest": "npm run tsc",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vickyru/protractor-typescript-jasmine.git"
+  },
+  "author": "vickyru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vickyru/protractor-typescript-jasmine/issues"
+  },
+  "homepage": "https://github.com/vickyru/protractor-typescript-jasmine#readme",
+  "devDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/compiler": "^8.2.14",
+    "@angular/core": "^8.2.14",
+    "@types/jasmine": "^3.5.0",
+    "@types/jasminewd2": "^2.0.8",
+    "@types/node": "^12.12.17",
+    "codelyzer": "^5.2.0",
+    "protractor": "^5.4.0",
+    "puppeteer": "^2.0.0",
+    "rxjs": "6.3.3",
+    "tslint": "5.9.1",
+    "typescript": "3.1.6"
+  }
+}
